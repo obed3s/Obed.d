@@ -43,3 +43,48 @@
 ## 🧪 `TECH_LAB`
 
 <div align="center">
+
+<img src="https://skillicons.dev/icons?i=ts,js,react,nodejs,cs,dotnet,mysql,prisma,bun,docker,git,github,postman" />
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=html,css,tailwind,vite,express,linux,azure" />
+
+</div>
+
+---
+
+## 💀 `DEVELOPER_RULES`
+
+```js
+const rules = [
+  "If it works → DON'T TOUCH IT",
+  "If it breaks → READ THE LOGS",
+  "If logs fail → ADD MORE LOGS",
+  "If production breaks → STAY CALM",
+  "If nobody knows → git blame",
+  "If everything works → BE SUSPICIOUS"
+];
+```
+
+---
+
+## 🐍 `CONTRIBUTION_MATRIX`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/obed3s/obed3s/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake"/>
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&animation=twinkling" width="100%"/>
+
+### ⚡ BUILD • BREAK • FIX • SHIP ⚡
+
+`STATUS: NEVER DONE`
+
+</div>
