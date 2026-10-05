@@ -2,34 +2,49 @@ name: Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-
+    # 00:00 UTC daily — offset a few minutes to avoid the :00 cron stampede
+    - cron: "17 0 * * *"
   workflow_dispatch:
-
   push:
-    branches:
-      - main
+    branches: [main]
+
+# Never run two of these at once — they'd race on the output branch
+concurrency:
+  group: snake-${{ github.ref }}
+  cancel-in-progress: true
+
+# Deny by default; grant only what the job needs
+permissions: {}
 
 jobs:
   generate:
+    name: Generate & publish snake
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     permissions:
-      contents: write
+      contents: write   # required to push to the `output` branch
 
     steps:
-      - name: Generate Contribution Snake
-        uses: Platane/snk@v3
+      - name: Generate snake SVGs
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: obed3s
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+        env:
+          # Use a PAT (secrets.SNAKE_TOKEN) if you want private contributions counted
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy Snake
+      - name: Publish to `output` branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           build_dir: dist
           target_branch: output
+          commit_message: "chore(snake): update [skip ci]"
+          # Overwrite any conflicting history on the output branch
+          force_orphan: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
