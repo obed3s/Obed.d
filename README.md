@@ -207,7 +207,7 @@ const rules = [
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/obed3s/Obed.d/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
+<img src="https://raw.githubusercontent.com/obed3s/obed3s/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake"/>
 
 </div>
 
