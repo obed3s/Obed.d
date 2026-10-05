@@ -21,13 +21,13 @@
 ║                 SYSTEM STATUS                       ║
 ╠══════════════════════════════════════════════════════╣
 ║                                                      ║
-║  🟢 CORE SYSTEM        ONLINE                        ║
-║  🟢 API               ONLINE                        ║
-║  🟢 DATABASE          ONLINE                        ║
-║  🟢 FRONTEND          ONLINE                        ║
-║  🟡 REQUIREMENTS      MUTATING...                   ║
-║  🟠 BUGS              BEING HUNTED                  ║
-║  🔴 PRODUCTION        DO NOT TOUCH                  ║
+║  🟢 CORE SYSTEM       ONLINE                         ║
+║  🟢 API               ONLINE                         ║
+║  🟢 DATABASE          ONLINE                         ║
+║  🟢 FRONTEND          ONLINE                         ║
+║  🟡 REQUIREMENTS      MUTATING...                    ║
+║  🟠 BUGS              BEING HUNTED                   ║
+║  🔴 PRODUCTION        DO NOT TOUCH                   ║
 ║                                                      ║
 ╚══════════════════════════════════════════════════════╝
 ```
@@ -114,6 +114,8 @@
 
 <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="350"/>
 
+<br><br>
+
 ```text
 "Why isn't this working?"
         ↓
@@ -125,7 +127,7 @@
         ↓
    console.log()
         ↓
-       "Oh..."
+      "Oh..."
         ↓
 ONE CHARACTER WAS WRONG 💀
 ```
@@ -189,13 +191,13 @@ const rules = [
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Obed.d&show_icons=true&hide_border=true&theme=transparent&include_all_commits=true" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api?username=obed3s&show_icons=true&hide_border=true&theme=transparent&include_all_commits=true" height="170"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Obed.d&layout=compact&hide_border=true&theme=transparent" height="170"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=obed3s&layout=compact&hide_border=true&theme=transparent" height="170"/>
 
 <br><br>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Obed.d&hide_border=true&theme=transparent" />
+<img src="https://streak-stats.demolab.com?user=obed3s&hide_border=true&theme=transparent" />
 
 </div>
 
@@ -205,7 +207,7 @@ const rules = [
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Obed.d/Obed.d/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
+<img src="https://raw.githubusercontent.com/obed3s/Obed.d/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
 
 </div>
 
@@ -229,7 +231,7 @@ const rules = [
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=150&section=footer&animation=twinkling"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=150&section=footer&animation=twinkling" width="100%"/>
 
 ### ⚡ BUILD • BREAK • FIX • SHIP ⚡
 
